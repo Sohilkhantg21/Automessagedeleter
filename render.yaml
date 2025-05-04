@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: autodeleter-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: API_ID
+        value: 26365804
+      - key: API_HASH
+        value: 311437f18ff014a3689409c9eeb44d42
+      - key: BOT_TOKEN
+        value: 7742062959:AAHSV3_CkV7qHKgJr0iFuNPoTbTck8OlnmE
+      - key: ADMIN_ID
+        value: 6411315434
